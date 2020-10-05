@@ -57,9 +57,15 @@ namespace Altkom.DotnetCore.WebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Customer customer)
+        public IActionResult Post([FromBody] Customer customer, [FromServices] IMessageService messageService)
         {
             customerService.Add(customer);
+
+            // TODO:
+            // Send email
+
+            // Send sms
+            messageService.Send($"Dziękujemy {customer.FirstName} {customer.LastName}");
 
             return CreatedAtRoute(nameof(GetById), new { Id = customer.Id }, customer);
         }

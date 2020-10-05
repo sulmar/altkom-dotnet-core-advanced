@@ -33,6 +33,8 @@ namespace Altkom.DotnetCore.WebApi
         {
             services.AddSingleton<ICustomerService, FakeCustomerService>();
             services.AddSingleton<Faker<Customer>, CustomerFaker>();
+
+            services.AddSingleton<IMessageService, FakeSmsService>();
             
             
             // dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson

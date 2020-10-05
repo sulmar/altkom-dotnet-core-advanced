@@ -7,6 +7,9 @@ using System.Linq;
 
 namespace Altkom.DotnetCore.FakeServices
 {
+
+   
+
     public class FakeCustomerService : ICustomerService
     {
         private readonly ICollection<Customer> customers;

@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.Api", "Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.OwinApi", "Altkom.DotnetCore.OwinApi\Altkom.DotnetCore.OwinApi.csproj", "{AD7544B4-46A6-4422-B166-48E62908BFB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.SignalR", "Altkom.DotnetCore.SignalR\Altkom.DotnetCore.SignalR.csproj", "{3B4FC175-E39A-4177-AE1D-91F15F814BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.SenderConsoleClient", "Altkom.DotnetCore.SenderConsoleClient\Altkom.DotnetCore.SenderConsoleClient.csproj", "{2F5F34F9-F21B-42FE-BFCA-733AF9FC38A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.ReceiverConsoleClient", "Altkom.DotnetCore.ReceiverConsoleClient\Altkom.DotnetCore.ReceiverConsoleClient.csproj", "{E3C42436-F4C3-4D1A-819A-46E5386A833E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,18 @@ Global
 		{AD7544B4-46A6-4422-B166-48E62908BFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7544B4-46A6-4422-B166-48E62908BFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7544B4-46A6-4422-B166-48E62908BFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4FC175-E39A-4177-AE1D-91F15F814BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4FC175-E39A-4177-AE1D-91F15F814BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4FC175-E39A-4177-AE1D-91F15F814BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4FC175-E39A-4177-AE1D-91F15F814BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5F34F9-F21B-42FE-BFCA-733AF9FC38A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5F34F9-F21B-42FE-BFCA-733AF9FC38A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5F34F9-F21B-42FE-BFCA-733AF9FC38A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5F34F9-F21B-42FE-BFCA-733AF9FC38A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
