@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Altkom.DotnetCore.Fakers\Altkom.DotnetCore.Fakers.csproj" />
+    <ProjectReference Include="..\Altkom.DotnetCore.FakeServices\Altkom.DotnetCore.FakeServices.csproj" />
+    <ProjectReference Include="..\Altkom.DotnetCore.IServices\Altkom.DotnetCore.IServices.csproj" />
+  </ItemGroup>
+
 </Project>
