@@ -22,12 +22,15 @@ namespace Altkom.DotnetCore.ReceiverConsoleClient
                 .WithUrl(url)
                 .Build();
 
+            connection.On<Customer>("AddedCustomer", 
+                customer => Console.WriteLine($"Received {customer.FirstName} {customer.LastName}"));
+
+            connection.On<string>("Pong",
+                message => Console.WriteLine(message));
+
             Console.WriteLine("Connecting...");
             await connection.StartAsync();
             Console.WriteLine("Connected.");
-
-            connection.On<Customer>("AddedCustomer", 
-                customer => Console.WriteLine($"Received {customer.FirstName} {customer.LastName}"));
 
 
             Console.WriteLine("Press any key to exit.");
