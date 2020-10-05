@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.Fakers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.WebApi", "Altkom.DotnetCore.WebApi\Altkom.DotnetCore.WebApi.csproj", "{3C7AE276-F056-4CF8-8011-13CF7ED08C55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.Api", "Altkom.DotnetCore.Api\Altkom.DotnetCore.Api.csproj", "{2ABF4232-8AED-4E4A-B22A-BEF03B7CC6AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3C7AE276-F056-4CF8-8011-13CF7ED08C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C7AE276-F056-4CF8-8011-13CF7ED08C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C7AE276-F056-4CF8-8011-13CF7ED08C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABF4232-8AED-4E4A-B22A-BEF03B7CC6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABF4232-8AED-4E4A-B22A-BEF03B7CC6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABF4232-8AED-4E4A-B22A-BEF03B7CC6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABF4232-8AED-4E4A-B22A-BEF03B7CC6AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
