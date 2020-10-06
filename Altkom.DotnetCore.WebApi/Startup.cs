@@ -42,9 +42,12 @@ namespace Altkom.DotnetCore.WebApi
             services.AddHealthChecks()
                 .AddCheck<RandomHealthCheck>("random");
 
-          //  services.AddHealthChecksUI();
-            
-            
+            // dotnet add package AspNetCore.HealthChecks.UI
+            // dotnet add package AspNetCore.HealthChecks.UI.Client
+            services.AddHealthChecksUI()
+                 .AddInMemoryStorage();  // dotnet add package AspNetCore.HealthChecks.UI.InMemory.Storage
+
+
             // dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
             services.AddControllers()
                 .AddNewtonsoftJson(options =>
@@ -78,7 +81,7 @@ namespace Altkom.DotnetCore.WebApi
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
                 });
 
-            //    endpoints.MapHealthChecksUI();
+                endpoints.MapHealthChecksUI();
 
                 // Microsoft.AspNetCore.Mvc.Formatters.Xml
                 endpoints.MapControllers();
