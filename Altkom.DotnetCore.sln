@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.WorkerSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.WindowsService", "Altkom.DotnetCore.WindowsService\Altkom.DotnetCore.WindowsService.csproj", "{8E533A4D-BC09-4399-BE68-FA24631793E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.DockerWebApi", "Altkom.DotnetCore.DockerWebApi\Altkom.DotnetCore.DockerWebApi.csproj", "{42F48F71-410F-4BEB-92B6-BCE3F6D7D6FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F48F71-410F-4BEB-92B6-BCE3F6D7D6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F48F71-410F-4BEB-92B6-BCE3F6D7D6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F48F71-410F-4BEB-92B6-BCE3F6D7D6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F48F71-410F-4BEB-92B6-BCE3F6D7D6FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

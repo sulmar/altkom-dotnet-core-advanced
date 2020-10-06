@@ -99,6 +99,11 @@ namespace Altkom.DotnetCore.WebApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
+            var customer = customerService.Get(id);
+
+            if (customer == null)
+                return NotFound();
+
             customerService.Remove(id);
 
             return NoContent();
