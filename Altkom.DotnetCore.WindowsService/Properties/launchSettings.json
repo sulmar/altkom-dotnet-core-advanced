@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Altkom.DotnetCore.WindowsService": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -48,6 +49,19 @@ namespace Altkom.DotnetCore.WebApi
                  .AddInMemoryStorage();  // dotnet add package AspNetCore.HealthChecks.UI.InMemory.Storage
 
 
+            // dotnet add package Microsoft.AspNetCore.ResponseCompression
+
+            services.Configure<GzipCompressionProviderOptions>(options =>
+            {
+                options.Level = System.IO.Compression.CompressionLevel.Optimal;
+            });
+
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                options.Providers.Add<GzipCompressionProvider>();
+            });
+
             // dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
             services.AddControllers()
                 .AddNewtonsoftJson(options =>
@@ -68,6 +82,8 @@ namespace Altkom.DotnetCore.WebApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseResponseCompression();
 
             app.UseRouting();
 

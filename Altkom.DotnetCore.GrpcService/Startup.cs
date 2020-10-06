@@ -11,6 +11,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace Altkom.DotnetCore.GrpcService
 {
+
+    // https://developers.google.com/protocol-buffers/docs/proto3
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.
