@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.SenderCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.ReceiverConsoleClient", "Altkom.DotnetCore.ReceiverConsoleClient\Altkom.DotnetCore.ReceiverConsoleClient.csproj", "{E3C42436-F4C3-4D1A-819A-46E5386A833E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.GrpcService", "Altkom.DotnetCore.GrpcService\Altkom.DotnetCore.GrpcService.csproj", "{E53AEB74-0BB0-4320-90E1-9F83BBCA0FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.GrpcConsoleClient", "Altkom.DotnetCore.GrpcConsoleClient\Altkom.DotnetCore.GrpcConsoleClient.csproj", "{EFC5DAF1-3C69-486A-8162-B282CD73FD47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3C42436-F4C3-4D1A-819A-46E5386A833E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53AEB74-0BB0-4320-90E1-9F83BBCA0FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53AEB74-0BB0-4320-90E1-9F83BBCA0FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53AEB74-0BB0-4320-90E1-9F83BBCA0FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53AEB74-0BB0-4320-90E1-9F83BBCA0FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
