@@ -6,8 +6,11 @@ using Altkom.DotnetCore.Fakers;
 using Altkom.DotnetCore.FakeServices;
 using Altkom.DotnetCore.IServices;
 using Altkom.DotnetCore.Models;
+using Altkom.DotnetCore.WebApi.HealthChecks;
 using Bogus;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -35,6 +38,11 @@ namespace Altkom.DotnetCore.WebApi
             services.AddSingleton<Faker<Customer>, CustomerFaker>();
 
             services.AddSingleton<IMessageService, FakeSmsService>();
+
+            services.AddHealthChecks()
+                .AddCheck<RandomHealthCheck>("random");
+
+          //  services.AddHealthChecksUI();
             
             
             // dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
@@ -64,8 +72,17 @@ namespace Altkom.DotnetCore.WebApi
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                {
+                    Predicate = _ => true,
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                });
+
+            //    endpoints.MapHealthChecksUI();
+
                 // Microsoft.AspNetCore.Mvc.Formatters.Xml
                 endpoints.MapControllers();
+
             });
         }
     }
