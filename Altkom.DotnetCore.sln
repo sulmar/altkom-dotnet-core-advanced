@@ -27,6 +27,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.GrpcServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.GrpcConsoleClient", "Altkom.DotnetCore.GrpcConsoleClient\Altkom.DotnetCore.GrpcConsoleClient.csproj", "{EFC5DAF1-3C69-486A-8162-B282CD73FD47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.HostedService", "Altkom.DotnetCore.HostedService\Altkom.DotnetCore.HostedService.csproj", "{FEE31F71-4543-495A-B734-60EFC5BBD595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.WorkerService", "Altkom.DotnetCore.WorkerService\Altkom.DotnetCore.WorkerService.csproj", "{207CA708-2CB3-4DFD-B68B-FAA323C8F433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.DotnetCore.WindowsService", "Altkom.DotnetCore.WindowsService\Altkom.DotnetCore.WindowsService.csproj", "{8E533A4D-BC09-4399-BE68-FA24631793E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +87,18 @@ Global
 		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC5DAF1-3C69-486A-8162-B282CD73FD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE31F71-4543-495A-B734-60EFC5BBD595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE31F71-4543-495A-B734-60EFC5BBD595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE31F71-4543-495A-B734-60EFC5BBD595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE31F71-4543-495A-B734-60EFC5BBD595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207CA708-2CB3-4DFD-B68B-FAA323C8F433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207CA708-2CB3-4DFD-B68B-FAA323C8F433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207CA708-2CB3-4DFD-B68B-FAA323C8F433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207CA708-2CB3-4DFD-B68B-FAA323C8F433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E533A4D-BC09-4399-BE68-FA24631793E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

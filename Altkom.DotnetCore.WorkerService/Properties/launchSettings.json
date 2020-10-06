@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Altkom.DotnetCore.WorkerService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
